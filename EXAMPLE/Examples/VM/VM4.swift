@@ -18,13 +18,13 @@ class VM4: ObservableObject {
 	
 	init() {
 		self.btnArray = [("SHOW/HIDE", Color.pink, Binding(get: {
-			showText
+			self.showText
 		}, set: {
-			showText = $0
+			self.showText = $0
 		})), ("FORMAT ON/OFF", Color.purple, Binding(get: {
-			showFormatting
+			self.showFormatting
 		}, set: {
-			showFormatting = $0
+			self.showFormatting = $0
 		}))]
 	}
 }
